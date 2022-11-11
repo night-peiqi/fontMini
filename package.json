@@ -1,0 +1,15 @@
+{
+  "name": "fontmini",
+  "version": "1.0.0",
+  "description": "提取特定字体",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "fontmin": "^0.9.9"
+  }
+}
