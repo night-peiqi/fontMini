@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.1.2",
+    "chalk": "4.1.2",
     "fontmin": "^0.9.9"
   }
 }

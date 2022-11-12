@@ -1,6 +1,7 @@
 const FontMin = require('fontmin');
 const path = require('path')
 const fs = require('fs')
+const chalk = require('chalk')
 
 const resolve = (dir) => path.join(__dirname, dir)
 
@@ -11,9 +12,9 @@ const fontBakPath = resolve(params[0])
 const textPath = resolve(params[1])
 const word = fs.readFileSync(textPath, {encoding: 'utf-8'})
 
-new FontMin().src(fontBakPath).dest('./build').use(FontMin.glyph({
+new FontMin().src(fontBakPath).dest('./mini').use(FontMin.glyph({
   text: word,
   hinting: false
 })).run((res) => {
-  console.log('憨憨，文字提取成功了呦！')
+  console.log(chalk.green('您用的文字已提取到mini文件夹，请查收！'))
 });
